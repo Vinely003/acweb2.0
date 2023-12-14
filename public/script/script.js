@@ -7,6 +7,7 @@ $(document).ready(function () {
         const acLinkId = $(this).data('acid');
         const acBodyId = $('.acBody[data-acid="' + acLinkId + '"]').data('acid');
 
+        $('.homeBody').hide();
         $('.acBody').hide();
 
         if (acLinkId == acBodyId) {
