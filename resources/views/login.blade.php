@@ -1,4 +1,5 @@
 <x-layout>
+    <div class="center">
         <form id="loginForm" method="POST" action="logingin">
             @csrf
             <div class="mx-auto" style="width: 25%">
@@ -26,4 +27,5 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
+    </div>
 </x-layout>

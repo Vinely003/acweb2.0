@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col">
                     <div class="title text-center">
-                        <h3>
+                        <h2>
                             {{ $data->ac_title }}
-                        </h3>
+                        </h2>
                     </div>
                     <div class="body text-justify">
                         <p style="font-size: 20px">

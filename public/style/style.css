@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   background-image: linear-gradient(45deg, #70090c, #5a5a5a);
   background-attachment: fixed;
@@ -12,6 +16,7 @@ a {
   cursor: pointer;
 }
 
-.container {
-  padding: 50px;
+.center {
+  position: relative;
+  top: 200px;
 }/*# sourceMappingURL=style.css.map */
