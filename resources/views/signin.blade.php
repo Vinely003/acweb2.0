@@ -1,31 +1,43 @@
 <x-layout>
     <div class="center">
-        <form id="signinForm" method="POST" action="register">
-            @csrf
-            <div class="mx-auto" style="width: 25%">
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="text" class="form-control" name="email" id="email" value="{{ old('email') }}"
-                        aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
-                    <div class="text-danger">
-                        @error('email')
-                            {{ $message }}
-                        @enderror
+        <div class="mx-auto logo" style="width: 50%">
+            <img style="width: 100%" src="image/ac_logo.png" alt="ACLogo">
+        </div>
+        <div class="form">
+            <form id="signinForm" method="POST" action="register">
+                @csrf
+                <fieldset>
+                    <div class="mx-auto" style="width: 25%">
+                        <legend>Registration</legend>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" name="email" id="email"
+                                value="{{ old('email') }}" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                            <div class="text-danger">
+                                @error('email')
+                                    {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password"
+                                placeholder="Password">
+                            <div class="text-danger">
+                                @error('password')
+                                    {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-                    <div class="text-danger">
-                        @error('password')
-                            {{ $message }}
-                        @enderror
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
+            <div class="page mx-auto">
+                <a class="btn btn-secondary" href="/login">Login</a>
             </div>
-        </form>
+        </div>
     </div>
 </x-layout>

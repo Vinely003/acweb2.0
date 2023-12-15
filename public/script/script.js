@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.acBody').hide();
+    $('.form').hide();
 
     $('.acLink').on('click', function (e) {
         e.preventDefault();
@@ -29,6 +30,13 @@ $(document).ready(function () {
                 $(this).show();
             }
         });
+    });
+
+    $('.logo').on('click', function () {
+        $(this).fadeOut(1000);
+        setTimeout(function(){
+            $('.form').fadeIn(1000);
+        },1000);
     });
 
 });

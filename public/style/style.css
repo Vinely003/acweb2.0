@@ -1,8 +1,7 @@
 html {
   height: 100%;
 }
-
-body {
+html body {
   background-image: linear-gradient(45deg, #70090c, #5a5a5a);
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -19,4 +18,15 @@ a {
 .center {
   position: relative;
   top: 250px;
+}
+.center .logo {
+  cursor: pointer;
+}
+.center .page {
+  position: absolute;
+  top: 238.5px;
+  left: 696.5px;
+}
+.center .page a {
+  width: 80px;
 }/*# sourceMappingURL=style.css.map */
