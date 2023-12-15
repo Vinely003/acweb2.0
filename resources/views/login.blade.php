@@ -36,7 +36,7 @@
                 </fieldset>
             </form>
             <div class="page mx-auto">
-                <a class="btn btn-secondary" href="/login">Signin</a>
+                <a class="btn btn-secondary" href="/">Signin</a>
             </div>
         </div>
     </div>
