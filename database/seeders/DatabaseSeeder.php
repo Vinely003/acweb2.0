@@ -65,8 +65,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\AcDatabase::factory()->create([
             'ac_name' => "Assassin's Creed Unity",
             'ac_url' => '/image/acu',
-            'ac_title' => "Assassin's Creed Unity is a 2014 sandbox action adventure game, and a sequel to 2013's Assassin's Creed IV: Black Flag, the game has the player take on the role of an Initiate as they explore the story of Arno Dorian, who joins the Assassins to investigate the murder of his adoptive father on behalf of his adoptive sister Élise de la Serre, a member of the Templars. The game was released on 11 November 2014 in North America, 13 November in Europe and 14 November in the UK. It is available for PlayStation 4, Xbox One, and PC. Assassin's Creed: Unity is set primarily in Paris during the French Revolution in the late 18th century, with two additional areas in Versailles and Saint-Denis.",
-            'ac_text' => "Assassin's Creed Unity game 2014",
+            'ac_title' => "Assassin's Creed Unity",
+            'ac_text' => "Assassin's Creed Unity is a 2014 sandbox action adventure game, and a sequel to 2013's Assassin's Creed IV: Black Flag, the game has the player take on the role of an Initiate as they explore the story of Arno Dorian, who joins the Assassins to investigate the murder of his adoptive father on behalf of his adoptive sister Élise de la Serre, a member of the Templars. The game was released on 11 November 2014 in North America, 13 November in Europe and 14 November in the UK. It is available for PlayStation 4, Xbox One, and PC. Assassin's Creed: Unity is set primarily in Paris during the French Revolution in the late 18th century, with two additional areas in Versailles and Saint-Denis.",
             'ac_image_path' => '/acu.jpg'
         ]);
         \App\Models\AcDatabase::factory()->create([
