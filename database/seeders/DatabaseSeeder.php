@@ -66,14 +66,14 @@ class DatabaseSeeder extends Seeder
             'ac_name' => "Assassin's Creed Unity",
             'ac_url' => '/image/acu',
             'ac_title' => "Assassin's Creed Unity",
-            'ac_text' => "Assassin's Creed Unity game 20014",
+            'ac_text' => "Assassin's Creed Unity game 2014",
             'ac_image_path' => '/acu.jpg'
         ]);
         \App\Models\AcDatabase::factory()->create([
             'ac_name' => "Assassin's Creed Rogue",
             'ac_url' => '/image/acro',
             'ac_title' => "Assassin's Creed Rogue",
-            'ac_text' => "Assassin's Creed Rogue game 20014",
+            'ac_text' => "Assassin's Creed Rogue game 2014",
             'ac_image_path' => '/acro.jpg'
         ]);
         \App\Models\AcDatabase::factory()->create([
