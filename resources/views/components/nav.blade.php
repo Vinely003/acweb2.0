@@ -27,8 +27,8 @@
                 <a href="/logout" class="nav-link text-danger">Logout</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="searchBar form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>

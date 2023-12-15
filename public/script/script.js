@@ -14,4 +14,21 @@ $(document).ready(function () {
             $('.acBody[data-acid="' + acLinkId + '"]').show();
         }
     });
+
+    $('.searchBar').on('submit', function (e) {
+        e.preventDefault();
+
+        const search = $('.search').val().toLowerCase();
+
+        $('.homeBody').hide();
+        $('.acBody').hide();
+
+        $('.acBody').each(function () {
+            const ac_name = $(this).data('acname').toLowerCase();
+            if (ac_name.includes(search)) {
+                $(this).show();
+            }
+        });
+    });
+
 });
