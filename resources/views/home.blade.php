@@ -10,6 +10,5 @@
             Creed:
             Mirage, released in October 2023.
         </p>
-        <video src=""></video>
     </div>
 </x-layout>
