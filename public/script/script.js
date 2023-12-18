@@ -34,9 +34,9 @@ $(document).ready(function () {
 
     $('.logo').on('click', function () {
         $(this).fadeOut(1000);
-        setTimeout(function(){
+        setTimeout(function () {
             $('.form').fadeIn(1000);
-        },1000);
+        }, 1000);
     });
 
 });

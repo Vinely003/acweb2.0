@@ -29,4 +29,10 @@ a {
 }
 .center .page a {
   width: 80px;
+}
+
+.image img {
+  max-height: 336.7px;
+  top: 100.45px;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
