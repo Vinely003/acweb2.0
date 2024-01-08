@@ -22,14 +22,6 @@ a {
 .center .logo {
   cursor: pointer;
 }
-.center .page {
-  position: absolute;
-  top: 238.5px;
-  left: 696.5px;
-}
-.center .page a {
-  width: 80px;
-}
 
 .image img {
   max-height: 336.7px;

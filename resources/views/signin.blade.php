@@ -13,11 +13,11 @@
                             <label for="email">Email address</label>
                             <input type="email" class="form-control" name="email" id="email"
                                 value="{{ old('email') }}" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
                             <div class="text-danger">
                                 @error('email')
-                                    {{ $message }}
+                                    <small>
+                                        {{ $message }}
+                                    </small>
                                 @enderror
                             </div>
                         </div>
@@ -27,17 +27,23 @@
                                 placeholder="Password">
                             <div class="text-danger">
                                 @error('password')
-                                    {{ $message }}
+                                    <small>
+                                        {{ $message }}
+                                    </small>
                                 @enderror
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="d-flex">
+                            <div class="mx-auto">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <div class="mx-auto">
+                                <a class="btn btn-secondary" href="/login">Login</a>
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
             </form>
-            <div class="page mx-auto">
-                <a class="btn btn-secondary" href="/login">Login</a>
-            </div>
         </div>
     </div>
 </x-layout>
